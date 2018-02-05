@@ -30,10 +30,10 @@ module ParsingArticles
     end
 
     def self.get_app_access_token
-      @oauth = Koala::Facebook::OAuth.new(@APP_ID ||= '1977681792501372', @APP_KEY ||='920ff6a0a18835cb7b2fef5cda8cd491')
+      @oauth = Koala::Facebook::OAuth.new(@APP_ID || = '1977681792501372', @APP_KEY || ='920ff6a0a18835cb7b2fef5cda8cd491')
       @oauth.get_app_access_token
     end
-    
+
     def get_facebook_array(graph)
       @articles_results = graph.get_connection(facebook_get_page_id, 'posts', {
       fields: ['title', 'link', 'message', 'created_time']})
@@ -47,7 +47,7 @@ module ParsingArticles
     def rss_parser()
       rss = RSS::Parser.parse(@url, false).items
       get_rss_array(rss) do |result|
-        result = { 'title'=>result.title, 'created_time'=>result.pubDate, 'link'=>result.link, 'message'=>result.description.gsub(/<\/?[^>]*>/, "") }
+        result = { 'title' => result.title, 'created_time' => result.pubDate, 'link' => result.link, 'message' => result.description.gsub(/<\/?[^>]*>/, "")}
         @articles_results.push(result)
       end   
     end

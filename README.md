@@ -21,8 +21,20 @@ Or install it yourself as:
     $ gem install parsing_articles
 
 ## Usage
+	Firstly you should configurate you facebook settings(if you want to get news from facebook pages). You should set your APP_ID and APP_KEY(you can find them on https://developers.facebook.com/)
+		TO Do that you should code:
+			ParsingArticles::GetArticles.config_facebook(APP_ID, APP_KEY)
 
-TODO: Write usage instructions here
+	Next You can use it to parse artcles from facebook:
+		@articles_facebook = ParsingArticles::GetArticles.new(url_of_facebook_page)
+		@articles_facebook.get_array
+	The last command returns array with articles
+
+	Similar considered to Rss urls(no configuration needed):
+		@articles_rss = ParsingArticles::GetArticles.new(rss)
+		@articles_rss.get_array
+
+
 
 ## Development
 
