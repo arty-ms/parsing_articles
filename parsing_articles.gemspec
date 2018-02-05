@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "parsing articles"
   spec.description   = " parsing articles from rss or facebook"
-  spec.homepage      = "TODO: https://github.com/morozartem9/parsing_articles"
+  spec.homepage      = "https://github.com/morozartem9/parsing_articles"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
