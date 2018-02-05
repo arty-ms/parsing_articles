@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    parsing_articles (0.1.0)
+    parsing_articles (1.0.0)
       activesupport
       koala
       nokogiri (>= 1.8.2)
