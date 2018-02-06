@@ -1,7 +1,6 @@
 require "parsing_articles/version"
 require 'rss'
-require 'open-uri'
-require 'nokogiri' 
+require 'open-uri' 
 require 'koala' 
 module ParsingArticles
   class GetArticles
@@ -35,13 +34,8 @@ module ParsingArticles
     end
 
     def get_facebook_array(graph)
-      @articles_results = graph.get_connection(facebook_get_page_id, 'posts', {
+      @articles_results = graph.get_connection(graph.get_object('', id: @url)['id'], 'posts', {
       fields: ['title', 'link', 'message', 'created_time']})
-    end
-
-    def facebook_get_page_id
-      page = Nokogiri::HTML(open(@url))
-      page_id = /([\d]){15}/.match((page.css('head')).to_s)
     end
 
     def rss_parser()
