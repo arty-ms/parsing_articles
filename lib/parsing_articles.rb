@@ -3,51 +3,53 @@ require 'rss'
 require 'open-uri' 
 require 'koala' 
 module ParsingArticles
-  class GetArticles
+  class StandartParser
     def initialize(url)
-      @url = url.to_s
-      @articles_results = []
+      @url = url
     end
 
-    def self.config_facebook(app_id = nil, app_secret = nil)
-      @APP_ID = app_id
-      @APP_KEY = app_secret
+    def parse; end
+
+    def get_array; end
+  end
+
+  class Facebook < StandartParser
+    def parse
+               
     end
 
     def get_array
-      facebook_or_rss
+              
+    end
+
+    def self.config_facebook(app_id = nil, app_secret = nil)
+    
+    end
+
+    private
+    def self.get_app_access_token
+      
+    end
+  end
+
+  class Rss < StandartParser
+    def parse
+     
+    end
+
+    def get_array
+    
+    end
+  end
+
+  class Parse < StandartParser
+    def get_array
+      
     end
 
     private
     def facebook_or_rss
-      /https:\/\/www.facebook.com/.match(@url) ? facebook_parser : rss_parser 
+      /https:\/\/www.facebook.com/.match(@url) ? Facebook.new().get_array : Rss.new().get_array 
     end
-
-    def facebook_parser
-      graph = Koala::Facebook::API.new(GetArticles.get_app_access_token)
-      get_facebook_array(graph)
-    end
-
-    def self.get_app_access_token
-      @oauth = Koala::Facebook::OAuth.new(@APP_ID ||= '1977681792501372', @APP_KEY ||='920ff6a0a18835cb7b2fef5cda8cd491')
-      @oauth.get_app_access_token
-    end
-
-    def get_facebook_array(graph)
-      @articles_results = graph.get_connection(graph.get_object('', id: @url)['id'], 'posts', {
-      fields: ['title', 'link', 'message', 'picture', 'created_time']})
-    end
-
-    def rss_parser()
-      rss = RSS::Parser.parse(@url, false).items
-      rss.map do |result|
-        result = { 'title' => result.title, 
-        'created_time' => result.pubDate, 
-        'link' => result.link, 
-        'picture' => result.description[/img.*?src="(.*?)"/i,1], 
-        'message' => result.description.gsub(/<\/?[^>]*>/, "")}
-        @articles_results.push(result)
-      end   
-    end 
   end
 end
