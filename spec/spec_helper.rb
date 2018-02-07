@@ -1,5 +1,12 @@
 require "bundler/setup"
 require "parsing_articles"
+require "vcr"
+VCR.configure do |config|
+  # Указываем где будем хранить наши кассеты )
+  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  # Интегрируемся с webmock 
+  config.hook_into :webmock # or :fakeweb
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -12,3 +19,5 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+

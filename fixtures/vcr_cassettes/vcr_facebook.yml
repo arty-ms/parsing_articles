@@ -1,0 +1,383 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://graph.facebook.com/oauth/access_token
+    body:
+      encoding: UTF-8
+      string: client_id=1977681792501372&client_secret=920ff6a0a18835cb7b2fef5cda8cd491&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Rev:
+      - '3632349'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - CveNfpqwl+2
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      X-Fb-Debug:
+      - hNJJIOmFLA4jb/FJ1OevTFGz800CTnW6MmLT+I2RacojPIhBYBmZ6hn+C4aMg0vXHdtAlveF8XyCGsxv2JMtkA==
+      Date:
+      - Wed, 07 Feb 2018 22:54:10 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '85'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"1977681792501372|GIogiCMrqIhOxwtMgoDHeZoETt0","token_type":"bearer"}'
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 22:54:10 GMT
+- request:
+    method: post
+    uri: https://graph.facebook.com/oauth/access_token
+    body:
+      encoding: UTF-8
+      string: client_id=1977681792501372&client_secret=920ff6a0a18835cb7b2fef5cda8cd491&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Rev:
+      - '3632349'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BNhvT6EIKLs
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      X-Fb-Debug:
+      - "/6SqyIQqKMyNde6nP92zUl8lAXzDXRm+Rrz9M0E/PdFkLvOeQaxK90srQXj/NN0wKCZ1/W8Ja6RhMGVghytukA=="
+      Date:
+      - Wed, 07 Feb 2018 22:54:10 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '85'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"1977681792501372|GIogiCMrqIhOxwtMgoDHeZoETt0","token_type":"bearer"}'
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 22:54:10 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/?access_token=1977681792501372%7CGIogiCMrqIhOxwtMgoDHeZoETt0&id=https://www.facebook.com/jonloomerdigital/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"d4fafa903c5a47f58725e21874c05d0154f987e1"'
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      X-Fb-Trace-Id:
+      - ATEsfspQL/K
+      X-Fb-Rev:
+      - '3632349'
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Facebook-Api-Version:
+      - v2.11
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Debug:
+      - 0LlaeVJJH9qyVpx+QgMO0Ib/sXJQaHOa63wDbJ0jPBw8GB0iD/rhgKrxKh8eCGJ7kcFwotlRnMtAY/ZmH2XpQQ==
+      Date:
+      - Wed, 07 Feb 2018 22:54:12 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '52'
+    body:
+      encoding: UTF-8
+      string: '{"name":"Jon Loomer Digital","id":"177748728980718"}'
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 22:54:12 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/177748728980718/posts?access_token=1977681792501372%7CGIogiCMrqIhOxwtMgoDHeZoETt0&fields=title,link,message,picture,created_time
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"410c4f58aee47b86e5e945cb34a5796742b77181"'
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      X-Fb-Trace-Id:
+      - F06PTIuC0UV
+      X-Fb-Rev:
+      - '3632349'
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Facebook-Api-Version:
+      - v2.11
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - luVfUT2o3ASnKz5sNi0/veHeoofLxPTswx3kxFX1eFhY05r8yvm1WXBlS6n7Ld6iFD7kNpOKJ7Hn0VHpnKJNdw==
+      Date:
+      - Wed, 07 Feb 2018 22:54:12 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '7979'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"message":"The second run of my Essential FB Ad Features
+        Webinar is on Monday at 1pm EST. I am streaming it via Facebook Live, so you
+        can watch it here. Click \"Get Reminder\" and you''ll be notified as we''re
+        starting. I hope to see you there!\n\nTopics to be covered:\n\n\u2022 Split
+        Testing\n\u2022 Automated Rules\n\u2022 Optimization\n\u2022 FB Analytics\n\u2022
+        Custom Audiences","created_time":"2018-02-06T18:48:27+0000","id":"177748728980718_1612192862202957"},{"link":"https:\/\/www.jonloomer.com\/2018\/01\/24\/facebook-ads-custom-audiences-guide\/","message":"Custom
+        Audiences used to be simple. When I used the term, you assumed I was talking
+        about targeting my customer list. Those days are long gone.\n\nThis now includes
+        your customers as well as anyone who engaged with you on Facebook, on your
+        app, on your website, or even offline. And the levels of detail in some of
+        these audiences can be incredible.\n\nBecause of the complexity, I spent a
+        day putting together this exhaustive roadmap of 55 Custom Audiences that you
+        can start targeting now. There are likely some here you''ve never considered
+        before.\n\nTake a look at the list. You may want to bookmark it. Which audiences
+        are your go-to? Any I left off?","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c118.0.130.130\/p130x130\/26755763_6088606647127_5358898761860907008_n.png?oh=f9783972d38b47339454cada4e3860de&oe=5AE0AD2E","created_time":"2018-01-25T07:15:01+0000","id":"177748728980718_1599757243446519"},{"link":"https:\/\/www.jonloomer.com\/2018\/01\/21\/facebook-marketers-already-fumbling-news-feed-change\/","message":"The
+        thing about this latest news feed change that I''m regretting is that we know
+        what shoe is going to drop next: Another news feed change.\n\nWhy? Because
+        the latest update creates an obvious roadmap for what the bad marketers will
+        do to manipulate the algorithm.\n\nI haven''t ranted in a while. This latest
+        post is the definition of a rant. It''s long. Many will misread it. I hope
+        I make the point I''m trying to make...","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c0.0.130.130\/p130x130\/26755885_6088430796927_9111920431547285504_n.png?oh=b3cf2b353a610ccf9f1e08d391d459b0&oe=5B138A52","created_time":"2018-01-22T09:15:00+0000","id":"177748728980718_1597141583708085"},{"link":"https:\/\/www.jonloomer.com\/2018\/01\/18\/facebook-ads-test-and-learn\/","message":"Test
+        and Learn is a new tool for Facebook advertisers that relies on deeper analytics
+        to help you better understand the overall effectiveness of your advertising.\n\nThe
+        primary reason for this is that it leverages Conversion Lift. For example...\n\nFacebook
+        will create two test groups:\n\n1. Those who saw your ads during the test.\n2.
+        Those in your target audience who were held back from seeing your ads during
+        the test.\n\nSometimes, people in the second group would have converted without
+        seeing your ads anyway (warm audiences, in particular). Additionally, someone
+        may convert within the test period after seeing your ad, but fall outside
+        of the default attribution window.\n\nFor these tests, Facebook really only
+        cares about who saw your ads, who didn''t, and how many conversions happened
+        from both groups to determine overall conversion lift. It''s more complicated
+        than that, but in the simplest terms.\n\nTake a look at my detailed tutorial.
+        Have you started using this yet?","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c110.0.130.130\/p130x130\/22536101_6088265992327_8599724441670254592_n.png?oh=0f01534ab077bdab39a98604a281b8f5&oe=5B0CAB60","created_time":"2018-01-19T09:15:00+0000","id":"177748728980718_1594176714004572"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/1588503721238538\/","message":"Don''t
+        forget that my first free webinar of 2018 is today and will be streamed via
+        Facebook Live! If the time doesn''t work for you, just hit the \"Get Reminder\"
+        button and you can come back to watch it later.\n\nHope to see you there!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24581663_1591872477568329_7791788050446548992_n.jpg?oh=d986decdfcde6ae2e2d4e8a9ef7e38e9&oe=5B21914A","created_time":"2018-01-16T09:15:00+0000","id":"177748728980718_1591400830948827"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/1588503721238538\/","message":"REMINDER:
+        My first FREE webinar of 2018 is on Tuesday, and I\u2019ll be streaming it
+        to my Facebook page. The content is completely new. Get a reminder so that
+        you\u2019re notified when we\u2019re starting.\n\nEven if you can\u2019t make
+        it, you\u2019ll be able to access the video here later.","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24581663_1591872477568329_7791788050446548992_n.jpg?oh=d986decdfcde6ae2e2d4e8a9ef7e38e9&oe=5B21914A","created_time":"2018-01-14T18:41:26+0000","id":"177748728980718_1590116791077231"},{"link":"https:\/\/www.jonloomer.com\/2018\/01\/14\/facebook-news-feed-update-now-what\/","message":"You''ve
+        heard by now about the latest update to the news feed that will significantly
+        favor person-to-person engagement over page content. So... what do you need
+        to do about it?\n\nOn Friday, I broke down the announcement to better understand
+        it. Today, I take a closer look at my thoughts on what to do next.\n\nWhile
+        we won''t know how this will impact your page until your page is actually
+        impacted (well, yeah), there are a few things to think about.\n\nThe primary
+        points of focus:\n\n1. Live video (if it makes sense)\n2. High quality content\n3.
+        Generate conversation (without engagement bait)\n4. Consider Groups\n\nI also
+        cover the potential impact on ads. Ultimately, this may not hurt your page
+        at all. But this is at least a starting point for some things to think about.\n\nHow
+        are you adjusting -- if at all -- your strategy after this announcement?","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c0.0.130.130\/p130x130\/26109210_6087955425127_4690869805022969856_n.png?oh=b3680669dbabbc175498e33eb4ef6ff3&oe=5B0D8923","created_time":"2018-01-14T13:05:00+0000","id":"177748728980718_1589672884454955"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/1588503721238538\/","message":"This
+        is my first free webinar of 2018! Click \u201cGet Reminder\u201d so that you\u2019ll
+        be alerted when we\u2019re starting.\n\nThe total length of the webinar will
+        be between 90-120 minutes, with the first 60-90 minutes focused on content
+        and the remaining on answering your questions.\n\nTOPICS INCLUDE:\n\n\u2022
+        Split Testing\n\u2022 Automated Rules\n\u2022 Website Custom Audiences and
+        Events\n\u2022 Facebook Analytics\n\u2022 Optimization\n\u2022 More?\n\nThis
+        is the first time I\u2019ve run this webinar, so we\u2019ll see what we\u2019ll
+        only be limited by time.\n\nI hope to see you there!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24581663_1591872477568329_7791788050446548992_n.jpg?oh=d986decdfcde6ae2e2d4e8a9ef7e38e9&oe=5B21914A","created_time":"2018-01-12T21:55:06+0000","id":"177748728980718_1588503721238538"},{"link":"https:\/\/www.jonloomer.com\/2018\/01\/12\/facebook-news-feed-is-changing\/","message":"You
+        need to read this. No, this isn''t click bait. No, I''m not trying to manipulate
+        you. This is just a big deal.\n\nOr it could be. It will certainly be received
+        as a big deal. There will be hysteria. There will be panic.\n\nI do everything
+        I can to break this down into tiny parts. I even rant and get a little philosophical.\n\nEnjoy...","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c0.0.130.130\/p130x130\/26107432_6087854714727_8209603770376519680_n.png?oh=f6cc907ba3c85cf4a1b3626b505ad953&oe=5AD9A661","created_time":"2018-01-12T09:15:00+0000","id":"177748728980718_1587956837959893"},{"link":"https:\/\/www.jonloomer.com\/2018\/01\/09\/facebook-campaign-budget-optimization\/","message":"Do
+        you have campaign budget optimization yet? It was originally announced in
+        November, but is beginning to be rolled out more broadly now.\n\nWith this
+        feature, budget is set at the campaign level. Facebook then distributes that
+        budget across multiple ad sets in a way that will -- hopefully -- provide
+        the best results.\n\nI''m trying this out myself by promoting this blog post.
+        Have you experimented with campaign budget optimization yet? What are you
+        seeing?","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c118.0.130.130\/p130x130\/26107511_6087711653727_4035120559116255232_n.png?oh=aba218179e6dba237b4f026fcedc15d5&oe=5B1AF562","created_time":"2018-01-10T09:15:00+0000","id":"177748728980718_1586160838139493"},{"link":"https:\/\/www.jonloomer.com\/2017\/12\/20\/facebook-ads-customize-creative-assets-by-placement\/","message":"There
+        are currently 12 different Facebook ad placements -- at least 13 if you separate
+        desktop and mobile news feed. Different display and aspect ratios may motivate
+        you to create different images or videos for various placements. Until now,
+        you were required to create a new ad set and ad for each new placement.\n\nThanks
+        to Facebook''s new feature, you can now customize creative assets by placement,
+        and this will all apply to a single ad unit. I wrote about how exactly you
+        can start using it.\n\nTake a look!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c118.0.130.130\/p130x130\/24296151_6086630445727_6384880476514942976_n.png?oh=071bcb02b79a1d167a71728747297f3f&oe=5B0EAABB","created_time":"2017-12-21T09:15:00+0000","id":"177748728980718_1567054433383467"},{"link":"https:\/\/www.jonloomer.com\/2017\/12\/13\/facebook-analytics-funnels\/","message":"This
+        is one of the most thorough blog posts I''ve ever written. But Facebook Analytics
+        Funnels require that level of detail. It''s an amazing tool with layers and
+        layers of possibilities.\n\nWith this blog post, I walked you down the path
+        of understanding how I uncovered the value of a post reaction -- and then
+        each specific reaction. How likely is each reaction to result in a page view
+        on my website? In a registration? In a purchase?\n\nThen I used this same
+        approach, but started with a post comment as the top of my funnel. Then a
+        post share. Then a sent message.\n\nYou can -- and should -- do this, too.
+        If you don''t have time to read it now, bookmark this post. It''s worth it!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c114.0.130.130\/p130x130\/24293757_6086176761527_6548667748677844992_n.png?oh=26e164e901fc86356106e506b8c0951d&oe=5B0E0BD8","created_time":"2017-12-14T09:15:00+0000","id":"177748728980718_1560351990720378"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155682920946351\/","message":"**
+        QUICK TUTORIAL: PURCHASE PIXEL EVENT **\n\nPixel events are important for
+        ad tracking, optimization, and analytics. By adding purchase event code to
+        the confirmation page, you can then send necessary details of a purchase that
+        can then be available to you in ad reports and analytics.\n\nHere''s a Quick
+        Video Tutorial to show you how...\n\nNotes:\n\n\u2022 Click the \"Watch More\"
+        button for ALL quick tutorials\n\u2022 There''s no sound. Follow the clicks!\n\u2022
+        You may need to switch to HD viewing\n\nIMPORTANT: This is the 50th Quick
+        Video Tutorial. All future tutorials will only be made available to Power
+        Hitters Club members only.","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24508461_10155682921016351_8638908978794856448_n.jpg?oh=e940769bb668799ad0c710a9d1a81c1f&oe=5ADE9CA3","created_time":"2017-12-13T16:05:02+0000","id":"177748728980718_10155682920946351"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155678068516351\/","message":"**
+        QUICK TUTORIAL: CUSTOMER LIFETIME VALUE LOOKALIKE AUDIENCES **\n\nIf you upload
+        your entire customer list (high and low value), complete with a column for
+        lifetime value, you can generate a Lookalike Audience of those who are most
+        similar to your highest value customers.\n\nHere''s a quick video tutorial
+        to show you how...\n\nNotes:\n\n\u2022 Click the \"Watch More\" button for
+        ALL quick tutorials\n\u2022 There''s no sound. Follow the clicks!\n\u2022
+        You may need to switch to HD viewing\n\nIMPORTANT: After the video #50, all
+        future Quick Videos will only be made available to Power Hitters Club members.","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24196944_10155678068581351_3909729392636461056_n.jpg?oh=8b3d4499f06e3782b3ef771b7b2a6493&oe=5B21B5F6","created_time":"2017-12-11T16:05:00+0000","id":"177748728980718_10155678068516351"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155673525231351\/","message":"**
+        QUICK TUTORIAL: FUNNELS **\n\nDid you know that you can find out the number
+        of people who \"loved\" your posts ended up registering for something on your
+        website? You can with the help of Facebook Analytics Funnels.\n\nIn this Quick
+        Video Tutorial, you''ll need to connect your pixel and page to an Event Source
+        Group prior to creating the funnel. Here''s how...\n\nNotes:\n\n\u2022 Click
+        the \"Watch More\" button for ALL quick tutorials\n\u2022 There''s no sound.
+        Follow the clicks!\n\u2022 You may need to switch to HD viewing\n\nEnjoy!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24290624_10155673525316351_7117410839887347712_n.jpg?oh=982d077a5340b0f134af4838fb5d2dd7&oe=5B1FD216","created_time":"2017-12-08T16:05:00+0000","id":"177748728980718_10155673525231351"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155659372071351\/","message":"**
+        QUICK TUTORIAL: CAMPAIGN GOALS **\n\nWhen you optimize for conversions, Facebook
+        will report by the action you''re optimizing for by default. But there are
+        times when the optimization event may be different than your ultimate goal.
+        \n\nThanks to Campaign Goals, you can control which event is displayed as
+        your \"result\" by default. Here''s how to use it...\n\nNotes:\n\n\u2022 Click
+        the \"Watch More\" button for ALL quick tutorials\n\u2022 There''s no sound.
+        Follow the clicks!\n\u2022 You may need to switch to HD viewing\n\nEnjoy!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24187417_10155659372161351_1286895381543649280_n.jpg?oh=34e81501fc28649b985d3a2306d12c5f&oe=5B1F94D6","created_time":"2017-12-06T16:05:00+0000","id":"177748728980718_10155659372071351"},{"link":"https:\/\/www.jonloomer.com\/facebook-analytics-master-class\/","message":"My
+        final training of the year starts today! It\u2019s a 2-lesson training on
+        Facebook Analytics, a powerful tool for understanding your customer funnel.
+        I hope to see you there!\n\nClick below to join me or to get more details...","picture":"https:\/\/external.xx.fbcdn.net\/safe_image.php?d=AQD5fqZqDlJrKid2&w=130&h=130&url=https\u00253A\u00252F\u00252Fwww.jonloomer.com\u00252Fwp-content\u00252Fuploads\u00252F2017\u00252F11\u00252Ffacebook-analytics-training.png&cfs=1&sx=1280&sy=0&sw=1407&sh=1407&_nc_hash=AQCG5voP6ZukCoMP","created_time":"2017-12-05T06:35:54+0000","id":"177748728980718_1552154934873417"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/1544362035652707\/","message":"Come
+        here for the FINAL 2017 airing of my Keys to Success free webinar. I''ll be
+        streaming it via Facebook Live! Click \"Get Reminder\" so you don''t forget...\n\nTopics
+        Covered:\n\n\u2022 Why Ads Don''t Always Work\n\u2022 Targeting\n\u2022 Funnels\n\u2022
+        Budgets and Bidding\n\u2022 Tracking\n\u2022 Ad Type, Copy, and Creative\n\nWhat
+        You\u2019ll Learn:\n\nIn this 90-minute webinar, we will focus on advanced
+        strategies that impact you as an advanced Facebook advertiser.\n\nAfter attending
+        this webinar, you will walk away with a greater understanding of the strategies
+        to apply that will allow you to reach your ideal audience with a successful
+        campaign in a cost-effective way.\n\nThis is not a webinar littered with unrealistic
+        guarantees and too-good-to-be-true results. Instead, these are simply the
+        strategies that I have found are effective for building a successful business
+        \u2014 no matter the niche or industry.\n\nLet me know if you have any questions!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24541570_1551726418249602_3921354408817852416_n.jpg?oh=b9bef84715837568ae58577157a2ab6f&oe=5B2695C4","created_time":"2017-12-04T18:00:12+0000","id":"177748728980718_1551683631587214"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155648942786351\/","message":"**
+        QUICK TUTORIAL: AUDIENCE BY DEVICE USED **\n\nIf the pixel is installed on
+        your website, you can create an audience that isolates visitors by the device
+        they used while viewing your content. This can prove valuable, for example,
+        if converting from a mobile device is less likely. You can target those who
+        initially visited from a mobile device, but reach them while they''re on desktop.
+        Here''s how...\n\nNotes:\n\n\u2022 Click the \"Watch More\" button for ALL
+        quick tutorials\n\u2022 There''s no sound. Follow the clicks!\n\u2022 You
+        may need to switch to HD viewing\n\nEnjoy!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24187381_10155648942966351_2031652760893521920_n.jpg?oh=13e5432b504d06ed4c14fdfcdbb91341&oe=5ADCBC74","created_time":"2017-12-04T16:05:01+0000","id":"177748728980718_10155648942786351"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/1544362035652707\/","message":"FINAL
+        REMINDER: My last FREE webinar of 2017 is today! The time displayed below
+        is in your time zone.\n\nIf you aren''t registered via GoToWebinar, simply
+        click \"Get Reminder\" below and you can watch the entire thing here via a
+        Facebook Live. You''ll receive a Facebook notification when it''s about to
+        begin.\n\nHope to see you there!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24541570_1551726418249602_3921354408817852416_n.jpg?oh=b9bef84715837568ae58577157a2ab6f&oe=5B2695C4","created_time":"2017-12-04T09:15:00+0000","id":"177748728980718_1551054188316825"},{"link":"https:\/\/www.jonloomer.com\/2017\/12\/02\/facebook-analytics-pixel-events\/","message":"Do
+        you have pixel Event code installed on all applicable pages of your website?
+        Are you using parameters to send additional details about the actions that
+        occurred? You may be doing this for tracking and optimization of your ads,
+        but it''s also a prerequisite for building amazing, insightful Facebook Analytics
+        reports.\n\nCheck out my latest post that first documents the exact types
+        of reports you can create once having these Events in place. Even if you aren''t
+        using Facebook Analytics, the rest of the post provides a step-by-step for
+        getting your Events installed.\n\nDo you have your Events in order?","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c59.0.130.130\/p130x130\/24202910_6085514005727_2958794182711312384_n.png?oh=f650404ae6eb972f9f33e8c923918f94&oe=5B140372","created_time":"2017-12-03T15:00:00+0000","id":"177748728980718_1550143718407872"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155647984396351\/","message":"**
+        QUICK TUTORIAL: OFFERS **\n\nDo you have something to sell? You may want to
+        experiment with the Offer format. It''s evolved quite a bit since it was first
+        released. Here''s a step-by-step tutorial to show you how to create one...\n\nNotes:\n\n\u2022
+        Click the \"Watch More\" button for ALL quick tutorials\n\u2022 There''s no
+        sound. Follow the clicks!\n\u2022 You may need to switch to HD viewing\n\nEnjoy!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24028868_10155647984511351_1324584342336307200_n.jpg?oh=e72f741eaebec6ed6a26b7f600548db1&oe=5ADF1483","created_time":"2017-12-01T16:05:00+0000","id":"177748728980718_10155647984396351"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/1544362035652707\/","message":"Don''t
+        forget about my free webinar on Monday! You can either register and watch
+        via GoToWebinar or simply join my Facebook Live here. No email address needed
+        -- just click \"Get Reminder\"!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24541570_1551726418249602_3921354408817852416_n.jpg?oh=b9bef84715837568ae58577157a2ab6f&oe=5B2695C4","created_time":"2017-11-30T23:22:13+0000","id":"177748728980718_1547850565303854"},{"link":"https:\/\/www.jonloomer.com\/2017\/11\/29\/facebook-analytics\/","message":"Are
+        you using Facebook Analytics yet? I''m not talking about Facebook Insights
+        or Facebook metrics or ad reports. I''m referring to Facebook''s answer to
+        Google Analytics.\n\nI neglected Facebook Analytics for too long. But once
+        I added events to my pixel, I saw how powerful it could be. Use it to analyze
+        your funnel -- from Facebook post to web page view to conversion.\n\nMy friend
+        Andrew Foxwell does an excellent job of detailing three primary benefits of
+        this tool. Take a look!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t45.1600-4\/c118.0.130.130\/p130x130\/24096458_6085334995327_9163683841255145472_n.png?oh=8b5794f82ae08985f510574488c64ac6&oe=5B23B78F","created_time":"2017-11-30T09:15:00+0000","id":"177748728980718_1547070192048558"},{"link":"https:\/\/www.facebook.com\/jonloomerdigital\/videos\/10155648953561351\/","message":"**
+        QUICK TUTORIAL: CREATIVE SPLIT TESTING **\n\nWant to figure out which collection
+        of image, text, headline, description, and CTA button works best? You can
+        do that now that \"Creative\" has been included in the split testing tool.
+        Here''s how...\n\nNotes:\n\n\u2022 Click the \"Watch More\" button for ALL
+        quick tutorials\n\u2022 There''s no sound. Follow the clicks!\n\u2022 You
+        may need to switch to HD viewing\n\nEnjoy!","picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/s130x130\/24132658_10155648953626351_5857375432193605632_n.jpg?oh=ac7d00aa9a3dead8fa3364568f5346dc&oe=5AE400EC","created_time":"2017-11-29T16:05:00+0000","id":"177748728980718_10155648953561351"}],"paging":{"cursors":{"before":"Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5TXhOemMzTkRnM01qZAzVPREEzTVRnNk5qUXpOekEwTkRBMk1ESTBNalU1TVRFME5BOE1ZAWEJwWDNOMGIzSjVYMmxrRHlBeE56YzNORGczTWpnNU9EQTNNVGhmTVRZAeE1qRTVNamcyTWpJd01qazFOdzhFZAEdsdFpRWmFlZAmg3QVE9PQZDZD","after":"Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5SXhOemMzTkRnM01qZAzVPREEzTVRnNk5UQTJPREEwTVRrd01qWXdPRGsxTnpFMER3eGhjR2xmYzNSdmNubGZAhV1FQSVRFM056YzBPRGN5T0RrNE1EY3hPRjh4TURFMU5UWTBPRGsxTXpVMk1UTTFNUThFZAEdsdFpRWmFIdHFzQVE9PQZDZD"},"next":"https:\/\/graph.facebook.com\/v2.11\/177748728980718\/posts?access_token=1977681792501372\u00257CGIogiCMrqIhOxwtMgoDHeZoETt0&fields=title\u00252Clink\u00252Cmessage\u00252Cpicture\u00252Ccreated_time&limit=25&after=Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5SXhOemMzTkRnM01qZAzVPREEzTVRnNk5UQTJPREEwTVRrd01qWXdPRGsxTnpFMER3eGhjR2xmYzNSdmNubGZAhV1FQSVRFM056YzBPRGN5T0RrNE1EY3hPRjh4TURFMU5UWTBPRGsxTXpVMk1UTTFNUThFZAEdsdFpRWmFIdHFzQVE9PQZDZD"}}'
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 22:54:12 GMT
+recorded_with: VCR 4.0.0
