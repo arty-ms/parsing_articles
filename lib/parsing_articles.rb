@@ -34,17 +34,22 @@ module ParsingArticles
 
   class Rss < StandartParser
     def parse
-     
+     rss = RSS::Parser.parse(@url, false).items
     end
 
     def get_array
-    
+      parse.map do |result|
+      result = { 'title' => result.title, 
+      'created_time' => result.pubDate, 
+      'link' => result.link, 
+      'picture' => result.description[/img.*?src="(.*?)"/i,1], 
+      'message' => result.description.gsub(/<\/?[^>]*>/, "")}
     end
   end
 
   class Parse < StandartParser
     def get_array
-      
+      facebook_or_rss.to_a
     end
 
     private
