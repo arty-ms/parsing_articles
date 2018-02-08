@@ -26,13 +26,12 @@ Or install it yourself as:
 			ParsingArticles::GetArticles.config_facebook(APP_ID, APP_KEY)
 
 	Next You can use it to parse artcles from facebook:
-		@articles_facebook = ParsingArticles::GetArticles.new(url_of_facebook_page)
-		@articles_facebook.get_array
+		@articles_facebook = ParsingArticles::Parse.new(url).get_array
 	The last command returns array with articles
 
-	Similar considered to Rss urls(no configuration needed):
-		@articles_rss = ParsingArticles::GetArticles.new(rss)
-		@articles_rss.get_array
+	Of course you can simply use either .Facebook class or .Rss class
+
+	
 
 
 
